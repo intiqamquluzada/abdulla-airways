@@ -1,0 +1,219 @@
+.news-section{
+    align-items: center;
+    gap: 24px;
+    .sub-news{
+        display: flex;
+        justify-content: space-around;
+        .main-news{
+            img{
+                height: 435px;
+                align-self: stretch;
+                border-radius: 6px;
+                border: 1px solid #E4E4E4;
+            }
+            h5{
+                align-self: stretch;
+                color: #095FB4;
+                font-family: 'Exo 2';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+            }
+            p{
+                align-self: stretch;
+                color: #8D8D8D;
+                font-family: 'Exo 2';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+        .more-news{
+            display: flex;
+            width: 537px;
+            padding: 24px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            border-radius: 6px;
+            border: 1px solid #E4E4E4;
+            .news{
+                display: flex;
+                .news-image{
+                    img{
+                        width: 120px;
+                        height: 100px;
+                        border-radius: 6px;
+                        border: 1px solid #E4E4E4;
+                        cursor: pointer;
+                    }
+                }
+                .news-text{
+                    .mobile-only{
+                        display: none;
+                    }
+                    margin-left: 12px;
+                    h6{
+                        align-self: stretch;
+                        color: #095FB4;
+                        font-family: 'Exo 2';
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        cursor: pointer;
+                    }
+                    p{
+                        color: #8D8D8D;
+                        font-family: 'Exo 2';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .news-section{
+        align-items: center;
+        gap: 24px;
+    }
+    .sub-news{
+        display: flex;
+        flex-direction: column;
+        .main-news{
+            img{
+                height: 214px !important;
+                width: 100%;
+                align-self: stretch;
+                border-radius: 6px;
+                border: 1px solid #E4E4E4;
+            }
+            h5{
+                align-self: stretch;
+                color: #095FB4;
+                font-family: 'Exo 2';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+            }
+            p{
+                align-self: stretch;
+                color: #8D8D8D;
+                font-family: 'Exo 2';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+        .more-news{
+            display: flex;
+            width: 337px !important;
+            flex-direction: row !important;
+            align-items: flex-start;
+            align-self: stretch;
+            .news{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start !important;
+                gap: 12px;
+                flex: 1 0 0;
+                .news-image{
+                    align-self: center !important;
+                    img{
+                        height: 100px !important;
+                        border-radius: 6px;
+                        border: 1px solid #E4E4E4;
+                        cursor: pointer;
+                    }
+                }
+                .news-text{
+                    .desktop-only{
+                        display: none;
+                    }
+                    .mobile-only{
+                        display: block !important;
+                    }
+                    margin-left: 12px;
+                    h6{
+                        align-self: stretch;
+                        color: #095FB4;
+                        font-family: 'Exo 2';
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px;
+                        cursor: pointer;
+                    }
+                    p{
+                        color: #8D8D8D;
+                        font-family: 'Exo 2';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .news:nth-child(n+3){
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px){
+    .news-section{
+        align-items: center;
+        gap: 24px;
+    }
+    .sub-news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .main-news{
+            img{
+                height: 214px;
+                width: 100%;
+                align-self: stretch;
+                border-radius: 6px;
+                border: 1px solid #E4E4E4;
+            }
+            h5{
+                align-self: stretch;
+                color: #095FB4;
+                font-family: 'Exo 2';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+            }
+            p{
+                align-self: stretch;
+                color: #8D8D8D;
+                font-family: 'Exo 2';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+        .more-news{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            flex: 1 0 0;
+        }
+    }
+}

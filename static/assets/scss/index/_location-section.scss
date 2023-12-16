@@ -1,0 +1,243 @@
+.location-section {
+  .locations {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 24px;
+    .first-location {
+      display: flex;
+      width: 648px;
+      padding: 24px;
+      align-items: flex-start;
+      gap: 24px;
+      border-radius: 6px;
+      background: #3f3e3e;
+      .location-icon {
+        display: flex;
+        padding: 16px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        i {
+          display: flex;
+          width: 32px;
+          height: 32px;
+          padding: 2.667px 7.333px;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-size: 25px;
+        }
+      }
+      .location-informations {
+        h5 {
+          color: #97c9ff;
+          font-family: "Exo 2";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 36px;
+        }
+        .phone-numbers {
+          p {
+            margin: 1px 0;
+          }
+        }
+        .emails {
+          p {
+            margin: 1px 0;
+          }
+        }
+        p {
+          color: #e1e1e1;
+          font-family: "Exo 2";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .second-location {
+      display: flex;
+      width: 648px;
+      padding: 24px;
+      align-items: flex-start;
+      gap: 24px;
+      border-radius: 6px;
+      background: #3b93f3;
+      .location-icon {
+        display: flex;
+        padding: 16px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 50%;
+        background: #fff;
+        i {
+          display: flex;
+          width: 32px;
+          height: 32px;
+          padding: 2.667px 7.333px;
+          justify-content: center;
+          align-items: center;
+          color: #3b93f3;
+          font-size: 25px;
+        }
+      }
+      .location-informations {
+        h5 {
+          color: #fff;
+          font-family: "Exo 2";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 36px;
+        }
+        .phone-numbers {
+          p {
+            margin: 1px 0;
+          }
+        }
+        .emails {
+          p {
+            margin: 1px 0;
+          }
+        }
+        p {
+          color: #e1e1e1;
+          font-family: "Exo 2";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .location-section {
+    .locations {
+      display: flex;
+      flex-direction: column;
+      .first-location {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+        padding: 24px;
+        align-items: flex-start;
+        gap: 24px;
+        border-radius: 6px;
+        background: #3f3e3e;
+        .location-icon {
+          display: flex;
+          padding: 16px;
+          align-items: flex-start;
+          gap: 10px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.2);
+          i {
+            display: flex;
+            width: 32px;
+            height: 32px;
+            padding: 2.667px 7.333px;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 25px;
+          }
+        }
+        .location-informations {
+          h5 {
+            color: #97c9ff;
+            font-family: "Exo 2";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+          }
+          .phone-numbers {
+            p {
+              margin: 1px 0;
+            }
+          }
+          .emails {
+            p {
+              margin: 1px 0;
+            }
+          }
+          p {
+            color: #e1e1e1;
+            font-family: "Exo 2";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .second-location {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+        padding: 24px;
+        align-items: flex-start;
+        gap: 24px;
+        border-radius: 6px;
+        background: #3b93f3;
+        .location-icon {
+          display: flex;
+          padding: 16px;
+          align-items: flex-start;
+          gap: 10px;
+          border-radius: 50%;
+          background: #fff;
+          i {
+            display: flex;
+            width: 32px;
+            height: 32px;
+            padding: 2.667px 7.333px;
+            justify-content: center;
+            align-items: center;
+            color: #3b93f3;
+            font-size: 25px;
+          }
+        }
+        .location-informations {
+          h5 {
+            color: #fff;
+            font-family: "Exo 2";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+          }
+          .phone-numbers {
+            p {
+              margin: 1px 0;
+            }
+          }
+          .emails {
+            p {
+              margin: 1px 0;
+            }
+          }
+          p {
+            color: #e1e1e1;
+            font-family: "Exo 2";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

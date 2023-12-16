@@ -1,0 +1,164 @@
+.breadscrumb-section{
+    .fresh-contain{
+        .contain-titles{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            .review-title{
+                h2{
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 90px;
+                    .first-review{
+                        color: #095FB4;
+                        font-family: 'Exo 2';
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px; 
+                    }
+                    .second-review{
+                        color: #151515;
+                        font-family: 'Exo 2';
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px;
+                    }
+                }
+            }
+
+            .delivery-list{
+                .text-content{
+                    margin-top: -50px;
+                    color: #8D8D8D;
+                    font-family: 'Exo 2';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                .delivery-box{
+                    display: flex;
+                    gap: 20px;
+                    .features{
+                        display: flex;
+                        width: 270px;
+                        height: 60px;
+                        padding: 16px;
+                        align-items: center;
+                        gap: 12px;
+                        border-radius: 6px;
+                        background: #fff;
+                        .guarantee{
+                            display: flex;
+                            padding: 10px;
+                            align-items: flex-start;
+                            gap: 10px;
+                            border-radius: 50%;
+                            background: #095FB4;
+                        }
+                        p{
+                            color: #151515;
+                            font-family: 'Exo 2';
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .breadscrumb-section{
+        height: 455px !important;
+        .fresh-image-2{
+            iframe{
+                width: 460px !important;
+            }
+        }
+        .contain-titles{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            position: absolute;
+            .review-title{
+                h2{
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 90px;
+                    position: relative;
+                    top: -420px;
+                    left: 75px;
+                    .first-review{
+                        color: #095FB4;
+                        font-family: 'Exo 2';
+                        font-size: 60px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px; 
+                    }
+                    .second-review{
+                        color: #151515;
+                        font-family: 'Exo 2';
+                        font-size: 60px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px;
+                    }
+                }
+            }
+
+            .delivery-list{
+                display: none;
+                .text-content{
+                    margin-top: -50px;
+                    color: #8D8D8D;
+                    font-family: 'Exo 2';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                .delivery-box{
+                    display: flex;
+                    gap: 20px;
+                    .features{
+                        display: flex;
+                        width: 270px;
+                        height: 60px;
+                        padding: 16px;
+                        align-items: center;
+                        gap: 12px;
+                        border-radius: 6px;
+                        background: #fff;
+                        .guarantee{
+                            display: flex;
+                            padding: 10px;
+                            align-items: flex-start;
+                            gap: 10px;
+                            border-radius: 50%;
+                            background: #095FB4;
+                        }
+                        p{
+                            color: #151515;
+                            font-family: 'Exo 2';
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

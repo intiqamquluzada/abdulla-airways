@@ -1,0 +1,37 @@
+@import './theme-modal';
+@import './location-modal';
+@import './deal-modal';
+@import './add-address-form';
+
+#editProfile{
+    .modal-header{
+        h5{
+            color: #151515;
+            font-family: 'Exo 2';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+        }
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid #E4E4E4;
+        background: #FFF;
+        width: 100%;
+    }
+    label{
+        color: #52525B;
+        font-family: 'Exo 2';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+    }
+    .modal-footer{
+        button{
+            width: 100%;
+            background-color: #095FB4;
+        }
+    }
+}

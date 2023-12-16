@@ -1,0 +1,40 @@
+.product-section{
+	.title{
+		h2{
+			color: #151515;
+			font-family: 'Exo 2';
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 36px;
+		}
+
+		.show-all-categories{
+			display: flex;
+			padding: 8px 12px;
+			justify-content: center;
+			align-items: center;
+			border-radius: 6px;
+			border: 1px solid #E4E4E4;
+			cursor: pointer;
+			span{
+				color: #151515;
+				font-family: 'Exo 2';
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 24px;
+			}
+			i{
+				display: flex;
+				width: 30px;
+				height: 30px;
+				padding: 7.487px;
+				justify-content: center;
+				align-items: center;
+				font-size: 15px;
+				margin-top: 2px;
+			}
+		}
+	}
+}

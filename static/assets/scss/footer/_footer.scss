@@ -1,0 +1,22 @@
+$background-color_1: #3B93F3;
+
+footer {
+	background-color: $background-color_1;
+	position: relative;
+	.first-footer{
+
+	}
+}
+@media (max-width: 1199px) {
+	footer {
+		&::after {
+			content: none;
+		}
+		&:before {
+			content: none;
+		}
+	}
+}
+
+@import './main-footer';
+@import './sub-footer'

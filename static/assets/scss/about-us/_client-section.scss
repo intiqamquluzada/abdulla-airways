@@ -1,0 +1,144 @@
+$color_1: var(--theme-color);
+$color_2: #4a5568;
+$background-color_1: #f8f8f8;
+
+.information-section{
+	.delivery-box{
+		display: flex;
+		flex-direction: row;
+		gap: 25px;
+		li{
+			.features{
+				border-radius: 6px;
+				border: 1px solid #E4E4E4;
+				background: #FFF;
+				display: flex;
+				width: 312px;
+				padding: 12px;
+				align-items: center;
+				gap: 12px;
+				height: 70px;
+				.guarantee{
+					display: flex;
+					padding: 2px;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+					border-radius: 100px;
+					background: #095FB4;
+					width: 20px;
+					i{
+						font-size: 15px;
+						color: #fff;
+						align-self: center;
+					}
+				}
+				p{
+					color: #151515;
+					font-family: 'Exo 2';
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 24px;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.information-section{
+	.delivery-box{
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		li{
+			.features{
+				border-radius: 6px;
+				border: 1px solid #E4E4E4;
+				background: #FFF;
+				display: flex;
+				width: 100%;
+				padding: 16px;
+				align-items: center;
+				gap: 12px;
+				align-self: stretch;
+				.guarantee{
+					display: flex;
+					padding: 5.833px 4.167px;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+					border-radius: 100px;
+					background: #095FB4;
+					width: 20px;
+					height: 20px;
+					i{
+						font-size: 15px;
+						color: #fff;
+						align-self: center;
+					}
+				}
+				p{
+					color: #151515;
+					font-family: 'Exo 2';
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 24px;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
+}
+
+@media (max-width: 1366px){
+	.information-section{
+	.delivery-box{
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		li{
+			.features{
+				border-radius: 6px;
+				border: 1px solid #E4E4E4;
+				background: #FFF;
+				display: flex;
+				width: 100%;
+				padding: 16px;
+				align-items: center;
+				gap: 12px;
+				align-self: stretch;
+				.guarantee{
+					display: flex;
+					padding: 5.833px 4.167px;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+					border-radius: 100px;
+					background: #095FB4;
+					width: 20px;
+					height: 20px;
+					i{
+						font-size: 15px;
+						color: #fff;
+						align-self: center;
+					}
+				}
+				p{
+					color: #151515;
+					font-family: 'Exo 2';
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 24px;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static '/assets/images/logo/cropped-Logo-big 1.png' %}" type="image/x-icon">
+    <title>Abdullayev Eli</title>
+
+    <!-- CASCADING STYLE SHEETS -->
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/bootstrap.css' %}">
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- wow css -->
+    <link rel="stylesheet" href="{% static '/assets/css/animate.min.css' %}" />
+
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/font-awesome.css' %}" />
+    <script src="https://kit.fontawesome.com/460a2c75b1.js" crossorigin="anonymous"></script>
+
+    <!-- feather icon css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/feather-icon.css' %}">
+
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/slick/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/slick/slick-theme.css' %}">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/bulk-style.css' %}">
+
+    <!-- Template css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href="{% static '/assets/css/style.css' %}">
+
+    <!-- JS CODES -->
+
+    <script src="{% static '/assets/js/pages/common.js' %}" type="module" defer></script>
+    <script src="{% static '/assets/js/pages/product.js' %}" type="module" defer></script>
+    <script src="{% static '/assets/js/script.js' %}" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Main Start -->
+    <main class="pb-md-4 pb-0 mt-4">
+
+        <!-- Product Left Sidebar Start -->
+        <section class="product-section">
+            <div class="container-fluid-lg">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 wow fadeInUp">
+                        <div class="row g-4">
+                            <div class="col-xl-6 wow fadeInUp">
+                                <div class="product-left-box">
+                                    <div class="row g-2">
+                                        <div class="col-xxl-10 col-lg-12 col-md-10 order-xxl-2 order-lg-1 order-md-2">
+                                            <div class="product-main-2 no-arrow">
+                                                <div>
+                                                    <div class="slider-image">
+                                                        <img src="{{plane.image.url}}" id="img-1"
+                                                            data-zoom-image="assets/images/product/product1.png"
+                                                            class="img-fluid image_zoom_cls-0 blur-up lazyload" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="right-box-contain product-custom">
+                                    <div class="price-rating">
+                                        <div class="name-and-category">
+                                            <span class="theme-color price">{{plane.sort}}</span>
+                                            <h3 class="text-content">{{plane.name}}</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="pickup-box desktop-pickup-box">
+                                        <div class="product-info d-flex">
+                                            <ul class="product-info-list product-info-list-2">
+                                                <li class="first-custom-list">Designer : <span> {{plane.designer}}</span></li>
+                                                <li class="first-custom-list">First flight : <span> {{plane.first_flight}}</span></li>
+                                                <li class="first-custom-list">Introduction to service : <span> {{plane.introduct}}</span></li>
+                                            </ul>
+                                            <ul class="product-info-list product-info-list-2">
+                                                <li class="first-custom-list">Production range : <span> {{plane.prod_range}} </span></li>
+                                                <li class="first-custom-list">Number of production : <span> {{plane.number_of_production}}</span></li>
+                                                <li class="first-custom-list">Unit cost : <span> {{plane.unit_cost}}</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="pickup-box mobile-pickup-box">
+                                        <div class="product-info d-flex">
+                                            <ul class="product-info-list-3">
+                                                <li>Dalğa uzunluğu : <span> 635nm</span></li>
+                                                <li>Lazer sinfi : <span> 2</span></li>
+                                                <li>İş sahəsi : <span> 20 m</span></li>
+                                                <li>Düzləşdirmə dəqiqliyi : <span> ± 0.4 mm / m</span></li>
+                                                <li>Özünü düzləşdirmə aralığı : <span> ± 4 °</span></li>
+                                                <li>İş vaxtı, maksimum : <span> 15 saat</span></li>
+                                                <li>Enerji təchizatı : <span> 4 x 1.5-V-LR6 (AA)</span></li>
+                                                <li>Toz və sıçrayışdan qorunma : <span> IP 54</span></li>
+                                                <li>Çəki : <span> 0.5 KG</span></li>
+                                                <li>Uzunluğu : <span> 85 mm</span></li>
+                                                <li>Eni : <span> 70 mm</span></li>
+                                                <li>Boy : <span> 125 mm</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Left Sidebar End -->
+
+    </main>
+    <!-- Main End -->
+</body>
+
+
+</html>

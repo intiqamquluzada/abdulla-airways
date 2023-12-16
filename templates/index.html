@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static '/assets/images/logo/cropped-Logo-big 1.png' %}" type="image/x-icon">
+    <title>Abdullayev Eli</title>
+
+    <!-- CASCADING STYLE SHEETS -->
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/bootstrap.css' %}">
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- wow css -->
+    <link rel="stylesheet" href="{% static '/assets/css/animate.min.css' %}" />
+
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/font-awesome.css' %}" />
+    <script src="https://kit.fontawesome.com/460a2c75b1.js" crossorigin="anonymous"></script>
+
+    <!-- feather icon css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/feather-icon.css' %}">
+
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/slick/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/vendors/slick/slick-theme.css' %}">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/assets/css/bulk-style.css' %}">
+
+    <!-- Template css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href="{% static '/assets/css/style.css' %}">
+
+    <!-- JS CODES -->
+
+    <script src="{% static '/assets/js/pages/common.js' %}" type="module" defer></script>
+    <script src="{% static '/assets/js/pages/product.js' %}" type="module" defer></script>
+    <script src="{% static '/assets/js/script.js' %}" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Main Start -->
+    <main class="pb-md-4 pb-0 mt-4">
+
+        <!-- Related Product Section Start -->
+        <section class="product-list-section section-b-space">
+            <div class="container-fluid-lg">
+                <div class="title" style="display: flex; justify-content: center;">
+                    <form class="form-inline my-2 my-lg-0" style="background:whitesmoke;" method="get">
+                        {% csrf_token %}
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="plane">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+                </div>
+                <div class="title" style="display: flex; justify-content: center;">
+                    <h1>Planes</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider-1_1 product-wrapper related-products">
+                            {% for p in planes %}
+                            <div>
+                                <div class="product-box-3 h-100 wow fadeInUp">
+                                    <div class="product-header">
+                                        <div class="product-image">
+                                            <a href="{% url 'detail' p.id %}">
+                                                <img src="{{p.image.url}}"
+                                                    class="img-fluid blur-up lazyload" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-footer">
+                                        <div class="product-detail">
+                                            <span class="span-name">{{p.sort}}</span>
+                                            <a href="plane-detail.html">
+                                                <h5 class="name">
+                                                    {{p.name}}
+                                                </h5>
+                                            </a>
+                                            <h5 class="price">
+                                                <span>{{p.first_flight}}</span>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Related Product Section End -->
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Tap to top start -->
+    <div class="theme-option theme-option-2">
+        <div class="back-to-top">
+            <a id="back-to-top" href="#">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Tap to top end -->
+</body>
+
+
+</html>
